@@ -232,8 +232,10 @@ nnoremap <leader>fh <cmd>lua require('telescope.builtin').help_tags()<cr>
 
 " Floaterm - auto start a terminal silently, and then F3 to toggle it
 nnoremap <leader>tn :FloatermNew --position=topright<CR>
-nnoremap   <silent>   <F3>   :FloatermToggle<CR>
-tnoremap   <silent>   <F3>   <C-\><C-n>:FloatermToggle<CR>
-tnoremap   <silent>   <c-[>   <C-\><C-n>:FloatermPrev<CR>
-tnoremap   <silent>   <c-]>   <C-\><C-n>:FloatermNext<CR>
+nnoremap <silent>   <F3>   :FloatermToggle<CR>
+tnoremap <silent>   <F3>   <C-\><C-n>:FloatermToggle<CR>
+tnoremap <silent>   <c-[>  <C-\><C-n>:FloatermPrev<CR>
+tnoremap <silent>   <c-]>  <C-\><C-n>:FloatermNext<CR>
+tnoremap <silent>   <F4>  <C-\><C-n><C-w><C-w>
+nnoremap <silent>   <F4>  <C-w><C-w>
 
